@@ -111,6 +111,12 @@
   background-image: url(/img/stars-background.png);
 }
 
+#button-send {
+ background-color: transparent;
+ border: none;
+}
+
+
   .btn-text {
     font-weight: 400;
     font-size: larger;
@@ -254,6 +260,13 @@ section {
 
 /* Intro */
 
+
+.portfolio-effect:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+
 .intro-plain{
   text-shadow: #fff 0 0 4px, #feffe6 0 0 20px;
   transform: rotateY(-60deg);
@@ -352,6 +365,7 @@ section {
   transform: rotateY(-60deg);
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
+
 
 
 
@@ -518,6 +532,11 @@ i {
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
 
+
+}
+
+.background-container img {
+  max-width: 100%;
 }
 
 .left-header {
@@ -1100,6 +1119,41 @@ h2 {
 
 h2 span {
     color: var(--color-secondary);
+}
+
+.port-text:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.stat-title:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.prog-title:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.about-item:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.theme-btn:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.control:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.contact-me:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
 
 .bg-text {
