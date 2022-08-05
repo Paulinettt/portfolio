@@ -5,11 +5,17 @@
     list-style: none;
 }
 
+
+
+
+
 :root {
-        --color-primary: #141723;
-        --color-secondary: #da7e3c;
+      /*   --color-primary: #141723; */
+        --color-primary: #121212;
+      /*   --color-secondary: #da7e3c; */
+       --color-secondary: #121212;
         --color-white: #FFFFFF;
-        --color-black: #000;
+        --color-black: #121212;
         --color-grey0: #f8f8f8;
         --color-grey-1: #dbe1e8;
         --color-grey-2: #b2becd;
@@ -37,18 +43,29 @@
     
   }
 
+   
 
   .btn-text {
-    text-shadow: #fff 0 0 9px, #fcffbb 0 0 60px;
-    perspective: 80px;
+    font-weight: 400;
+    font-size: larger;
     outline: none;
-    color:#fff ;
+    color:#FFD5FF;
+    text-shadow: 1px 0px 2px #FFD5FF, 0px 0px 2px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 10px #D42CCA, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #D42CCA,20px 0vw 100px #D42CCA;
     
   }
 
+  .btn-text span .flicker-medium2 .flicker-slow2 .flicker-fast {
+    font-weight: 400;
+    font-size: larger;
+    outline: none;
+    color:#FFD5FF;
+    text-shadow: 1px 0px 2px #FFD5FF, 0px 0px 2px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 10px #D42CCA, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #D42CCA,20px 0vw 100px #D42CCA;
+  }
+
+
   .light-mode .btn-text {
     text-shadow: rgb(52, 31, 31) 0 0 1px, rgb(203, 172, 172) 0 -1px 2px, #8FBC8F 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
-    perspective: 80px;
+    
     outline: none;
     color: gray;
   }
@@ -114,6 +131,7 @@ section {
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
+    
 
 }
 
@@ -170,15 +188,6 @@ section {
 
 /* Intro */
 
-.name {
-  
-    color: hsla(0,0%,0%,0);
-   
-    
-    align-self: center;
-  
-}
-
 .intro-plain{
   text-shadow: #fff 0 0 4px, #feffe6 0 0 20px;
   transform: rotateY(-60deg);
@@ -223,6 +232,54 @@ section {
 	}
 }
 
+.name {
+  position: relative;
+  color: #FFD5FF;
+  align-self: center;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  align-self:flex-end;
+  font-size: 3rem;
+}
+
+
+
+.flicker-slow{
+  animation: flicker 3s linear infinite;
+  
+
+}
+
+.flicker-slow2{
+  animation: flicker 4s linear infinite;
+  
+
+}
+
+.flicker-medium {
+  animation: flicker 2s linear infinite;
+}
+.flicker-medium2 {
+  animation: flicker 1.5s linear infinite;
+}
+
+.flicker-fast{
+  animation: flicker 1s linear infinite;
+  
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
 
 .name:hover .name-effect strong{
   text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
@@ -256,17 +313,16 @@ section {
 }
 
 .box .inner:first-child {
-	background-color: #da7e3c;
-  text-shadow: #fff 0 0 4px, #fcffbb 0 0 10px;
-	color: black;
+	background-color: black;
+  outline: none; 
+    text-shadow: 1px 0px 2px #fcffbb, 0px 0px 2px #fcffbb, 3px 0px 4px #fcffbb, 2px 0px 3px #fff, 2px 3px 10px #fff, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #fff,20px 0vw 100px #fff;
 	transform-origin: right;
 	transform: perspective(100px) rotateY(-15deg);
 }
 
 .box .inner:last-child {
 	background-color: black;
-  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
-	
+  color: #6c7983;
 	transform-origin: left;
 	transform: perspective(100px) rotateY(15deg);
 }
@@ -410,9 +466,6 @@ i {
     padding-right: 18rem;
 }
 
-.name {
-    font-size: 3rem;  
-}
 
  p {
     margin: 1.5rem 0;
@@ -1017,11 +1070,7 @@ h2 span {
       width: 90%;
       margin: 0 auto;
     }
-    .right-header .name {
-      font-size: 2.5rem !important;
-      text-align: center;
-      padding-top: 3rem;
-    }
+   
   
     .header-content .left-header .image {
       margin: 0 auto;
