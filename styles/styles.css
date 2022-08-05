@@ -13,7 +13,7 @@
       /*   --color-primary: #141723; */
         --color-primary: #121212;
       /*   --color-secondary: #da7e3c; */
-       --color-secondary: #121212;
+       --color-secondary: #efee98;
         --color-white: #FFFFFF;
         --color-black: #121212;
         --color-grey0: #f8f8f8;
@@ -43,7 +43,73 @@
     
   }
 
+
+  /* Background-effects */
    
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {    
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+    @-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container{
+ 
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+
+ .stars {
+ background: repeat;
+ position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+    z-index: 0;
+} 
+
+.moon {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+
+.header-content {
+  background-image: url(/img/stars-background.png);
+}
 
   .btn-text {
     font-weight: 400;
@@ -290,6 +356,7 @@ section {
 
 
 
+
 .intro-plain:hover {
   margin-left: 20px;
   transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
@@ -368,7 +435,7 @@ section {
   }
 
   .active-btn  i{
-    color: var(--color-white) !important;
+    color: #121212 !important;
   }
 
  
@@ -407,13 +474,13 @@ section {
             height: 90%;
             width: 68%;
             margin-left: 4rem;
-            background-color: var(--color-black);
+            background-image: url(/img/stars-background.png);
             transition: all .4s ease-in-out;
 }
 
 i {
     font-size: 1.2rem;
-    color: var(--color-grey-2);
+    color: #121212;
     pointer-events: none;
 
 }
@@ -476,7 +543,7 @@ i {
     transition: all .4s ease-in-out;
     width: 65%;
     height: 100%;
-    background-color: var(--color-secondary);
+    background-image: url(/img/stars-background.png);
     position: absolute;
     left: 0;
     top: 0;
@@ -776,10 +843,12 @@ i {
 
   .project-source {
     font-size: 1.5rem;
-    color: var(--color-white);
+    color: #121212;
     margin-bottom: 1.5rem;
   }
-
+.summary-p {
+  color: #121212;
+}
   .icons {
     display: flex;
     justify-content: center;
@@ -1086,7 +1155,10 @@ h2 span {
       transform: translateX(-50%);
       width: 100%;
       background-color: var(--color-grey-5);
+
     }
+    
+
     .controls .control {
       margin: 1rem 0.3rem;
     }

@@ -12,15 +12,14 @@
 </head>
 <body class="main-content">
     <div class="background-container">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="moon"><img src="/img/background-moon.png" alt=""></div>
 
-
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="clouds"></div>
+        <div class="stars"><img src="/img/stars-background.png" alt=""></div>
+        
     
         <header class="section sec1 header active" id="home">
             <div class="header-content">
+               
             
               <div class="left-header">
                  <div class="h-shape"></div>
@@ -61,6 +60,7 @@
     
     <main>
         <section class="section sec2 about" id="about">
+           
             <div class="main-title">
                 <h2 class="light-title" data-heading="i">About <span style="--i:1" class="turning">M</span><span style="--i:2" class="turning">E</span><span class="bg-text"></span></h2>
             </div>
@@ -286,7 +286,7 @@
                         </div>
                         <div class="hover-items">
                             <h3 class="project-source">Space Sophie</h3>
-                            <p>A catching game built with JavaScript, HTML & CSS</p>
+                            <p class="summary-p">A catching game built with JavaScript, HTML & CSS</p>
                             <div class="icons">
                                     <a href="#" class="icon">
                                     <i class="fab fa-github"></i>
@@ -302,7 +302,7 @@
                         </div>
                         <div class="hover-items">
                             <h3 class="project-source">Foster4Paws</h3>
-                            <p>A responsive website for animal shelters and foster families built with NodeJS, ExpressJS and MongoDB</p>
+                            <p class="summary-p">A responsive website for animal shelters and foster families built with NodeJS, ExpressJS and MongoDB</p>
                             <div class="icons">
                                 <a href="#" class="icon">
                                     <i class="fab fa-github"></i>
@@ -323,7 +323,7 @@
                         </div>
                         <div class="hover-items">
                             <h3 class="project-source">Forkmate</h3>
-                            <p>A single-page app tackling food waste in the workplace built with React, NodeJS, ExpressJS and MongoDB
+                            <p class="summary-p">A single-page app tackling food waste in the workplace built with React, NodeJS, ExpressJS and MongoDB
                             </p>
                             <div class="icons">
                                     <a href="#" class="icon">
@@ -443,6 +443,8 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+
+    
 
     <script src="app.js"></script>
 </body>
