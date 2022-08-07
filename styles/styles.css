@@ -126,6 +126,8 @@
     
   }
 
+ 
+
   .btn-text span .flicker-medium2 .flicker-slow2 .flicker-fast {
     font-weight: 400;
     font-size: larger;
@@ -656,14 +658,16 @@ i {
         width: 60%;
 }
 
-.progress .javascript { width: 75%; }
-.progress .css { width: 80%; }
-.progress .react{ width: 60%; }
-.progress .node{ width: 70%; }
-.progress .restapi{ width: 70%; }
-.progress .express{ width: 70%; }
-.progress .mongo{ width: 70%; }
-.progress .postman{ width: 80%; }
+.progress .javascript { width: 60%; }
+.progress .css { width: 60%; }
+.progress .react{ width: 50%; }
+.progress .node{ width: 50%; }
+.progress .restapi{ width: 50%; }
+.progress .express{ width: 50%; }
+.progress .mongo{ width: 50%; }
+.progress .postman{ width: 70%; }
+.progress .github{ width: 60%; }
+
 
 
 
@@ -1072,6 +1076,7 @@ background-color: #141723;
 
 .btn-text {
     padding: 0 2rem; 
+   
 }
 
 
@@ -1152,6 +1157,11 @@ h2 span {
 }
 
 .contact-me:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.paragraph-about:hover {
   text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
