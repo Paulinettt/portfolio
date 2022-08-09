@@ -260,6 +260,15 @@ section {
 } 
 
 
+.job-summary strong {
+  color: white;
+}
+
+.job-summary strong:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
 /* Intro */
 
 
@@ -802,7 +811,7 @@ i {
 }
 
 .company {
-    color: var(--color-grey-2);
+    color: rgb(239 238 146);
                 font-weight: 500;
                 font-size: 1.2rem;
 }
@@ -1164,6 +1173,10 @@ h2 span {
 .paragraph-about:hover {
   text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.paragraph-tran{
+  text-indent: 20px;
 }
 
 .bg-text {
