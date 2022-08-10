@@ -29,13 +29,13 @@
 }
 
 .light-mode {
-    --color-primary: #FFFFFF;
+    --color-primary: #3c898c;
     --color-secondary: #9fb6d4;
     --color-white: #000;
     --color-black: #000;
     --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
+    --color-grey-1: #f8f8f8;
+    --color-grey-2: #f8f8f8;
     --color-grey-3: #6c7983;
     --color-grey-4: #8FBC8F;
     --color-grey-5: #B0C4DE;
@@ -123,7 +123,17 @@
     outline: none;
     color:#FFD5FF;
     text-shadow: 1px 0px 2px #FFD5FF, 0px 0px 2px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 10px #D42CCA, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #D42CCA,20px 0vw 100px #D42CCA;
+    padding: 0 2rem; 
     
+  }
+
+  .light-mode .btn-text {
+    font-weight: 400;
+    font-size: larger;
+    outline: none;
+    color:black;
+    text-shadow: 1px 0px 2px black, 0px 0px 2px black 3px 0px 4px black, 2px 0px 3px black, 2px 3px 10px black, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px black,20px 0vw 100px black;
+
   }
 
  
@@ -137,12 +147,15 @@
   }
 
 
-  .light-mode .btn-text {
-    text-shadow: rgb(52, 31, 31) 0 0 1px, rgb(203, 172, 172) 0 -1px 2px, #8FBC8F 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
-    
+  .light-mode .btn-text span .flicker-medium2 .flicker-slow2 .flicker-fast {
+    font-weight: 400;
+    font-size: larger;
     outline: none;
-    color: gray;
+    color:black;
+    
   }
+ 
+  
 
   .light-mode .name:hover .name-effect strong{
     text-shadow: #8FBC8F 0 0 4px, #8FBC8F 0 0 20px;
@@ -262,6 +275,16 @@ section {
 
 .job-summary strong {
   color: white;
+}
+
+.light-mode .job-summary strong {
+  
+  font-weight: 400;
+    
+    outline: none;
+    color:black;
+    text-shadow: 1px 0px 2px #FFD5FF, 0px 0px 2px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 10px #D42CCA, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #D42CCA,20px 0vw 100px #D42CCA;
+  
 }
 
 .job-summary strong:hover {
@@ -937,6 +960,9 @@ i {
   .contact-content-con .left-contact {
     flex: 2;
   }
+  .light-mode .left-contact {
+    color: white;
+  }
 
   .contact-content-con .left-contact .contact-me {
     margin-top: 1rem;
@@ -1083,10 +1109,8 @@ background-color: #141723;
             transition: all .4s ease-out;
 } 
 
-.btn-text {
-    padding: 0 2rem; 
-   
-}
+
+
 
 
 
@@ -1121,7 +1145,9 @@ h2 .turning {
 
 }
 
- 
+ .light-mode .port-text {
+  color: white;
+ }
 
 
 h2 {
@@ -1173,6 +1199,10 @@ h2 span {
 .paragraph-about:hover {
   text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+.light-mode .paragraph-about {
+  color: white;
 }
 
 .paragraph-tran{

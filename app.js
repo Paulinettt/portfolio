@@ -42,10 +42,19 @@ function PageTransitions() {
         let element = document.body;
         element.classList.toggle('light-mode')
     })
+
+
+    
 }
 
 
 PageTransitions();
 
 
-window.scrollTo({ top: 0, behavior: 'smooth' });
+//window.scrollTo({ top: 0, behavior: 'smooth' });
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+  window.onbeforeunload();
