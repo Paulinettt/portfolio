@@ -29,7 +29,7 @@
 }
 
 .light-mode {
-    --color-primary: #3c898c;
+    --color-primary: #244d4f;
     --color-secondary: #9fb6d4;
     --color-white: #000;
     --color-black: #000;
@@ -169,15 +169,18 @@
   }
 
   .light-mode .box .inner:first-child {
-    background-color: #9fb6d4;
-    color: black;
+    background-color: black;
+    color: white;
+    outline: none; 
+    text-shadow: 1px 0px 2px #fcffbb, 0px 0px 2px #fcffbb, 3px 0px 4px #fcffbb, 2px 0px 3px #fff, 2px 3px 10px #fff, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #fff,20px 0vw 100px #fff;
+    transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
     transform-origin: right;
     transform: perspective(100px) rotateY(-15deg);
   }
   
   .light-mode .box .inner:last-child {
-    background-color: #8FBC8F;
-    color: #6c7983;
+    background-color: #f2f2f2;
+    color: black;
     transform-origin: left;
     transform: perspective(100px) rotateY(15deg);
   }
@@ -660,6 +663,10 @@ i {
     margin: 0;
 }
 
+.light-mode .prog-title {
+  color: white;
+}
+
 .progress-icon {
     display: flex;
     align-items: center;
@@ -709,6 +716,10 @@ i {
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
+}
+
+.light-mode .stat-title {
+  color: white;
 }
 
 .stat-title::before {
