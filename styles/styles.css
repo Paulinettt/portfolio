@@ -114,6 +114,7 @@
 #button-send {
  background-color: transparent;
  border: none;
+ cursor:pointer;
 }
 
 
@@ -124,6 +125,7 @@
     color:#FFD5FF;
     text-shadow: 1px 0px 2px #FFD5FF, 0px 0px 2px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 10px #D42CCA, 2px 0px 10px, 5px 0px 50px, 20px 0vw 100px #D42CCA,20px 0vw 100px #D42CCA;
     padding: 0 2rem; 
+    flex-direction: row;
     
   }
 
@@ -1075,6 +1077,7 @@ i {
   .contact-content-con .right-contact .submit-btn {
     display: flex;
     justify-content: flex-start;
+    
   }
 
   #button-send {
@@ -1099,6 +1102,8 @@ color:white;
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
+    flex-direction: row;
+
 }
 
 .main-btn::before {
