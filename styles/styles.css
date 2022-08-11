@@ -1061,7 +1061,10 @@ i {
     width: 100%;
     color: var(--color-white);
     resize: none;
+ 
   }
+
+  
 
   .contact-content-con .right-contact .i-c-2 {
     display: flex;
