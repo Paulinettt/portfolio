@@ -1497,3 +1497,14 @@ h2 span {
       font-size: 4rem;
     }
   }
+
+
+  .thankyou-content {
+  background-image: url(../img/stars-background.png);
+
+  }
+
+  .thankyou {
+    margin-top: 80px;
+    margin-left: 50px;
+  }
