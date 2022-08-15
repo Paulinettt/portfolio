@@ -9,6 +9,6 @@ This is a presentation of my work as a junior developer
 3. Contact
 4. Portfolio
 
-### Link
+## Link
 
-https://github.com/Paulinettt/portfolio
+https://paulinettt.github.io/portfolio/
