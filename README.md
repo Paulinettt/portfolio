@@ -8,3 +8,7 @@ This is a presentation of my work as a junior developer
 2. Skills
 3. Contact
 4. Portfolio
+
+### Link
+
+https://github.com/Paulinettt/portfolio
