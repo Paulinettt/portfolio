@@ -1275,6 +1275,11 @@ h2 span {
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }
 
+.icon:hover {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
 .paragraph-about:hover {
   text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
   transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
