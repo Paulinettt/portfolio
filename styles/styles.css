@@ -282,7 +282,8 @@ section {
 
 
 .job-summary strong {
-  color: white;
+  color:#efee98;
+  font-weight: 800;
 }
 
 .light-mode .job-summary strong {
